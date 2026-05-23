@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <title>Cutie Fights!</title>
+</head>
+
+<body class="body1">
+
+    <div class="scene">
+
+        <div class="topoBatalha">
+            <div class="status">
+                <h2>Hello Kitty</h2>
+                <div class="barraVida">
+                    <div class="vida" id="vidaPlayer"></div>
+                </div>
+                <p id="hpPlayer">100 HP</p>
+            </div>
+
+            <div class="status">
+                <h2>Cinnamonroll</h2>
+                <div class="barraVida">
+                    <div class="vida" id="vidaEnemy"></div>
+                </div>
+                <p id="hpEnemy">100 HP</p>
+            </div>
+        </div>
+
+        <div class="personagens">
+            <img src="Assets/player.jpg" id="playerSprite" class="sprite player">
+            <img src="Assets/enemy.png" id="enemySprite" class="sprite enemy">
+        </div>
+
+        <div class="menuAtaques">
+            <h3>Escolha um ataque:</h3>
+
+            <button onclick="atacar('fraco')">Ataque Fraco</button>
+            <button onclick="atacar('medio')">Ataque Médio</button>
+            <button onclick="atacar('forte')">Ataque Forte</button>
+
+            <p id="mensagem">A batalha começou!</p>
+        </div>
+
+    </div>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
